@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/reg"
+            android:textColor="#050505"
+            android:textSize="24sp"
+            android:fontFamily="@font/basic"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Nombre -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="text"
+            android:hint="Nombre"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- EDAD -->
+        <EditText
+            android:id="@+id/etEdad"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Edad"
+            android:inputType="number"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+        <!-- Genero -->
+        <EditText
+            android:id="@+id/etSexo"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_border"
+            android:inputType="text"
+            android:hint="Sexo"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gmail -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_border"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="DuplicateIds" />
+
+        <!-- Telefono -->
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/tel"
+            android:inputType="phone"
+            android:padding="10dp"
+            android:layout_marginBottom="16dp" />
+
+
+
+        <!-- Contraseña -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:background="@drawable/edittext_border"
+            android:hint="@string/contra"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:layout_marginBottom="32dp" />
+
+        <!-- Botón Registrarse -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#03A9F4"
+            android:onClick="Registrar"
+            android:text="Registrarse"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:onClick="Cancelar"
+            android:text="Cancelar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>

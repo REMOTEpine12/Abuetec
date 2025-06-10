@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Cabecera con título y botón -->
+    <LinearLayout
+        android:id="@+id/cabecera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Medicación"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btnAgregarMedicamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar Medicamento"
+            android:backgroundTint="#2196F3"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <!-- Contenedor dinámico dentro de un ScrollView -->
+    <ScrollView
+        android:id="@+id/scrollMedicamentos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cabecera"
+        android:layout_above="@id/bottomNavigation">
+
+        <LinearLayout
+            android:id="@+id/contenedorTarjetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="80dp" />
+    </ScrollView>
+
+    <!-- Barra de navegación inferior -->
+    <LinearLayout
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="#2196F3"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Inicio"
+            android:onClick="home"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_casa"
+            app:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnMessages"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Asistente Virtual"
+            android:onClick="chatbot"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_asistente"
+            app:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnAppointments"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Citas"
+            android:onClick="CITAS"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_cita_medica"
+            app:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnMedication"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Medicación"
+            android:onClick="medicina"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_medic"
+            app:tint="#FFFFFF" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btnTracker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:contentDescription="Tracker"
+            android:onClick="tracker"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_tracker"
+            app:tint="#FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

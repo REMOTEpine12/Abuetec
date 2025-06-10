@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AbueTech</string>
+    <string name="asistente">asistente</string>
+    <string name="bienvenido">Bienvenido</string>
+    <string name="nombre">AbueTech</string>
+    <string name="lema">Tecnología que cuida de ti.</string>
+    <string name="inicio">Iniciar Sesión</string>
+    <string name="reg">Registrarse</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="tel">Teléfono</string>
+    <string name="telEm">Email/Teléfono</string>
+    <string name="contra">Contraseña</string>
+    <string name="olv">Olvidaste contraseña</string>
+    <string name="regist">¿Eres nuevo? Registrate</string>
+    <string name="nom">Nombre</string>
+    <string name="card_icon_description">Icono del ítem</string>
+
+</resources>

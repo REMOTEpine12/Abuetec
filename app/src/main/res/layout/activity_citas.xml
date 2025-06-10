@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+  <!-- Botón para agregar cita -->
+  <Button
+      android:id="@+id/btnAgregarCita"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Agregar nueva cita"
+      android:textColor="#FFFFFF"
+      android:backgroundTint="#4CAF50"
+      android:textSize="16sp"
+      android:layout_marginBottom="8dp" />
+
+  <!-- Scroll con tarjetas -->
+  <ScrollView
+      android:id="@+id/scrollCitas"
+      android:layout_below="@+id/btnAgregarCita"
+      android:layout_above="@+id/bottomNavigation"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/CitasContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp"/>
+  </ScrollView>
+
+  <!-- Barra de navegación inferior -->
+  <LinearLayout
+      android:id="@+id/bottomNavigation"
+      android:layout_width="match_parent"
+      android:layout_height="60dp"
+      android:layout_alignParentBottom="true"
+      android:background="#2196F3"
+      android:gravity="center"
+      android:orientation="horizontal"
+      android:weightSum="5">
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnHome"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="home"
+        app:srcCompat="@drawable/ic_casa"
+        app:tint="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnMessages"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="chatbot"
+        app:srcCompat="@drawable/ic_asistente"
+        app:tint="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnAppointments"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="CITAS"
+        app:srcCompat="@drawable/ic_cita_medica"
+        app:tint="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnMedication"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="medicina"
+        app:srcCompat="@drawable/ic_medic"
+        app:tint="#FFFFFF" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnTracker"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:onClick="tracker"
+        app:srcCompat="@drawable/ic_tracker"
+        app:tint="#FFFFFF" />
+  </LinearLayout>
+</RelativeLayout>
