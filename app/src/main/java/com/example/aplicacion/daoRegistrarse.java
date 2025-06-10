@@ -1,5 +1,6 @@
 package com.example.aplicacion;
 
+import android.annotation.SuppressLint;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -53,6 +54,7 @@ public class daoRegistrarse {
         return result > 0;
     }
 
+    @SuppressLint("Range")
     public ArrayList<registrarse> verTodos() {
         ArrayList<registrarse> registros = new ArrayList<>();
         Cursor cursor = cx.rawQuery("SELECT * FROM cuenta", null);
@@ -75,6 +77,7 @@ public class daoRegistrarse {
         return registros;
     }
 
+    @SuppressLint("Range")
     public registrarse verUno(int id) {
         registrarse c = null;
         Cursor cursor = cx.rawQuery("SELECT * FROM cuenta WHERE idcuenta=?", new String[]{String.valueOf(id)});
