@@ -20,22 +20,29 @@
             android:gravity="center_horizontal">
 
             <!-- Icono de perfil -->
-            <ImageView
-                android:layout_width="64dp"
-                android:layout_height="64dp"
-                android:src="@drawable/ic_perfil"
-                android:contentDescription="Perfil" />
 
             <!-- Cambiar perfil -->
+
+            <!-- Datos del usuario -->
+            <ImageView
+                android:id="@+id/btnPerfil"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:clickable="true"
+                android:contentDescription="Perfil"
+                android:focusable="true"
+                android:onClick="irAlPerfil"
+                android:rotationX="-2"
+                android:src="@drawable/ic_perfil" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="Change profile"
                 android:textColor="#00BCD4"
-                android:textSize="16sp"
-                android:layout_marginTop="4dp" />
+                android:textSize="16sp" />
 
-            <!-- Datos del usuario -->
             <TextView
                 android:id="@+id/nombreUsuario"
                 android:layout_width="wrap_content"

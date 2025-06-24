@@ -105,6 +105,7 @@ public class Tracker extends AppCompatActivity {
         });
     }
 
+    public void irAlPerfil(View view){ startActivity(new Intent(this, Perfil.class));}
     public void CITAS(View view){
         startActivity(new Intent(this, Citas.class));
     }
