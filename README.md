@@ -1,5 +1,3 @@
-
-
 Se propone primero diseñar un chatbot para asistir a los adultos mayores con funcionalidades 
 que ayuden en su día a día como establecer recordatorios sobre sus medicamentos, e incluso 
 recomendarles actividades y ejercicios de acuerdo con las características de cada uno, estos 
